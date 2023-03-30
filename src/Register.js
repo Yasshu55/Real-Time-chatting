@@ -15,7 +15,7 @@ const changeHandler = (e) => {
 
 const submitHandler = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:5000/register',data)
+    axios.post('https://chatting-backend.onrender.com/register',data)
     .then(res => alert(res.data));
 }
 
